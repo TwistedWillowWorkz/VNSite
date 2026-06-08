@@ -1,0 +1,118 @@
+.site-header {
+  height: 96px;
+  width: 100%;
+  padding: 0 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+  background: rgba(5, 7, 6, 0.92);
+  border-bottom: 1px solid rgba(218, 190, 133, 0.25);
+  color: #eadfca;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  min-width: 280px;
+}
+
+.brand-icon {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+}
+
+.brand-text h1 {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #eadfca;
+  line-height: 1;
+}
+
+.brand-text p {
+  margin: 0.35rem 0 0;
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #c7a96d;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.25rem;
+  flex: 1;
+}
+
+.main-nav a {
+  position: relative;
+  color: #d8c9ad;
+  text-decoration: none;
+  font-size: 0.98rem;
+  transition: color 0.2s ease;
+}
+
+.main-nav a:hover {
+  color: #f0dca5;
+}
+
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -0.55rem;
+  width: 0;
+  height: 2px;
+  background: #d6b674;
+  transform: translateX(-50%);
+  transition: width 0.2s ease;
+}
+
+.main-nav a:hover::after,
+.main-nav a.active::after {
+  width: 100%;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 220px;
+  justify-content: flex-end;
+}
+
+.btn {
+  padding: 0.75rem 1.45rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.btn-outline {
+  color: #e8d8b8;
+  border: 1px solid rgba(218, 190, 133, 0.55);
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.btn-outline:hover {
+  border-color: #e5c887;
+  color: #f5e6c8;
+}
+
+.btn-gold {
+  color: #1d1710;
+  background: #e2c37e;
+  border: 1px solid #f0dca5;
+}
+
+.btn-gold:hover {
+  background: #f0d28d;
+}
