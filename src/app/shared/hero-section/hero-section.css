@@ -1,0 +1,113 @@
+:host {
+  display: block;
+}
+
+.hero-overlay {
+  background:
+    linear-gradient(
+    90deg,
+    rgba(5, 8, 7, 0.88) 0%,
+    rgba(5, 8, 7, 0.72) 25%,
+    rgba(5, 8, 7, 0.50) 45%,
+    rgba(5, 8, 7, 0.25) 70%,
+    rgba(5, 8, 7, 0.08) 90%,
+    rgba(5, 8, 7, 0.00) 100%
+  ),
+  url('/images/hero/vn-hero-pic.png');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5rem 6rem;
+}
+
+.hero-content {
+  max-width: 760px;
+  color: #f3dfb7;
+}
+
+.hero-title {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.welcome-text {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 3rem;
+  letter-spacing: 0.03em;
+  text-transform: none;
+  color: #d59b58;
+  margin-bottom: 0.75rem;
+}
+
+.hero-line {
+  font-size: 4.8rem;
+  letter-spacing: 0.02em;
+  color: #f2e2c2;
+  white-space: nowrap;
+}
+
+.hero-divider {
+  max-width: 620px;
+  margin: 1.6rem 0 1.8rem;
+  display: flex;
+  align-items: center;
+  color: #b98243;
+}
+
+.hero-divider span {
+  height: 1px;
+  flex: 1;
+  background: #8d6236;
+}
+
+.divider-ornament {
+  padding: 0 0.7rem;
+  font-size: 0.8rem;
+  color: #c99555;
+  white-space: nowrap;
+}
+
+.hero-description {
+  max-width: 470px;
+  margin: 0 0 2rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.35rem;
+  line-height: 1.45;
+  color: #ead7b4;
+}
+
+.hero-buttons {
+  display: flex;
+}
+
+.hero-btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 0.95rem;
+  padding: 0.9rem 2rem;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+}
+
+.primary-btn {
+  color: #e9c98f;
+  background: rgba(10, 42, 31, 0.75);
+  border: 1px solid #9f7640;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+}
+
+.primary-btn:hover {
+  background: rgba(19, 65, 47, 0.9);
+  transform: translateY(-2px);
+}
