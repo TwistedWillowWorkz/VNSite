@@ -1,0 +1,82 @@
+.cta-section {
+  width: 100%;
+  min-height: 180px;
+
+  background-image: url('/images/subhero-pic.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+.cta-overlay {
+  width: 100%;
+  min-height: 180px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(5, 8, 7, 0.45);
+}
+
+.cta-content {
+  width: 100%;
+  max-width: 1100px;
+
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.cta-content h2 {
+  margin: 0;
+
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2rem;
+  font-weight: 500;
+
+  color: #eadfca;
+
+  text-align: center;
+}
+
+.cta-button {
+  padding: 1rem 2rem;
+
+  border: 1px solid #f0dca5;
+  border-radius: 6px;
+
+  background: #e2c37e;
+  color: #1d1710;
+
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1rem;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.cta-button:hover {
+  background: #f0d28d;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .cta-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-content h2 {
+    font-size: 1.5rem;
+  }
+}

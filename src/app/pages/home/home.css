@@ -1,0 +1,12 @@
+.home-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #050706;
+  color: #eadfca;
+  overflow-x: hidden;
+}
+
+.home-page > * {
+  display: block;
+  width: 100%;
+}

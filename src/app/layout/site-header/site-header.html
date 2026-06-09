@@ -9,11 +9,11 @@
   </div>
 
   <nav class="main-nav">
-    <a routerLink="/">Home</a>
-    <a routerLink="/announcements">Announcements</a>
-    <a routerLink="/vellichor-nook">Vellichor Nook</a>
-    <a routerLink="/community">Community</a>
-    <a routerLink="/pricing">Pricing</a>
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" >Home</a>
+    <a routerLink="/announcements" routerLinkActive="active">Announcements</a>
+    <a routerLink="/vellichor-nook" routerLinkActive="active" class="app-nav-link" >Vellichor Nook</a>
+    <a routerLink="/community" routerLinkActive="active">Community</a>
+    <a routerLink="/pricing" routerLinkActive="active">Pricing</a>
   </nav>
 
   <div class="header-actions">
