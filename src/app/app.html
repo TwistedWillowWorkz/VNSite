@@ -1,11 +1,23 @@
 <div class="app-shell">
-<app-site-header></app-site-header>
+  <app-site-header
+    (loginClicked)="openLogin()"
+    (joinClicked)="openRegister()">
+  </app-site-header>
 
-<section id="page-top" class="home-hero-section">
-  <app-hero-section></app-hero-section>
-</section>
 
-<router-outlet></router-outlet>
+  <section id="page-top" class="home-hero-section">
+    <app-hero-section></app-hero-section>
 
-<app-site-footer></app-site-footer>
+    @if (activeModal === 'login') {
+      <app-login-modal (closeModal)="closeModal()"></app-login-modal>
+    }
+
+    @if (activeModal === 'register') {
+      <app-register-modal (switchToLogin)="openLogin()"> </app-register-modal>
+    }
+  </section>
+
+  <router-outlet></router-outlet>
+
+  <app-site-footer></app-site-footer>
 </div>

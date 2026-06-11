@@ -1,0 +1,60 @@
+<div class="auth-card">
+
+  <h2>Join the Nook</h2>
+
+  @if (!registrationSuccessful) {
+    <form
+      class="auth-form"
+      (ngSubmit)="register()">
+
+      <input
+        type="text"
+        [(ngModel)]="registerRequest.displayName"
+        name="displayName"
+        placeholder="Display Name">
+
+      <input
+        type="email"
+        [(ngModel)]="registerRequest.email"
+        name="email"
+        placeholder="Email">
+
+      <input
+        type="password"
+        [(ngModel)]="registerRequest.password"
+        name="password"
+        placeholder="Password">
+
+      <button type="submit">
+        Register
+      </button>
+
+      @if (registrationFailed) {
+        <div class="auth-error">
+          Registration failed. Please try again.
+        </div>
+      }
+
+    </form>
+  }
+
+  @if (registrationSuccessful) {
+    <div class="auth-success">
+
+      <h3>Welcome to Vellichor Nook!</h3>
+
+      <p>
+        Your account has been created successfully.
+      </p>
+
+      <button
+        type="button"
+        class="secondary-auth-button"
+        (click)="goToLogin()">
+        Log In
+      </button>
+
+    </div>
+  }
+
+</div>

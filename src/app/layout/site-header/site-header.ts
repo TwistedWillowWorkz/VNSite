@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -8,4 +8,15 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   templateUrl: './site-header.html',
   styleUrls: ['./site-header.css']
 })
-export class SiteHeader {}
+export class SiteHeader {
+  @Output() loginClicked = new EventEmitter<void>();
+  @Output() joinClicked = new EventEmitter<void>();
+
+  openLogin(): void {
+    this.loginClicked.emit();
+  }
+
+  openRegister(): void {
+    this.joinClicked.emit();
+  }
+}

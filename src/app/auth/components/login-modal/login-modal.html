@@ -1,0 +1,33 @@
+<div class="auth-card">
+
+  <h2>Welcome Back</h2>
+
+  <form
+    class="auth-form"
+    (ngSubmit)="login()">
+
+    <input
+      type="email"
+      [(ngModel)]="loginRequest.email"
+      name="email"
+      placeholder="Email">
+
+    <input
+      type="password"
+      [(ngModel)]="loginRequest.password"
+      name="password"
+      placeholder="Password">
+
+    <button type="submit">
+      Log In
+    </button>
+
+    @if (loginFailed) {
+      <div class="auth-error">
+        {{ errorMessage }}
+      </div>
+    }
+
+  </form>
+
+</div>

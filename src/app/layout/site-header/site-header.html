@@ -11,13 +11,14 @@
   <nav class="main-nav">
     <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" >Home</a>
     <a routerLink="/announcements" routerLinkActive="active">Announcements</a>
-    <a routerLink="/vellichor-nook" routerLinkActive="active" class="app-nav-link" >Vellichor Nook</a>
+    <a href="http://localhost:4300" class="nav-link"> Vellichor Nook </a>
     <a routerLink="/community" routerLinkActive="active">Community</a>
     <a routerLink="/pricing" routerLinkActive="active">Pricing</a>
   </nav>
 
   <div class="header-actions">
-    <a routerLink="/login" class="btn btn-outline">Log In</a>
-    <a routerLink="/join" class="btn btn-gold">Join Now</a>
+    <button class="btn btn-outline" type="button" (click)="openLogin()">Log In</button>
+    <button class="btn btn-gold" type="button" (click)="openRegister()">Join Now</button>
   </div>
+
 </header>

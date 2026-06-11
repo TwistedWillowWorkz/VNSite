@@ -40,6 +40,19 @@ main {
   overflow: hidden;
 }
 
+app-register-modal,
+app-login-modal {
+  position: absolute;
+  top: 50%;
+  left: 68%;
+
+  transform: translate(-50%, -50%);
+  z-index: 100;
+
+  display: block;
+}
+
+
 /* =========================================
    LARGE DESKTOP / ULTRAWIDE
 ========================================= */
