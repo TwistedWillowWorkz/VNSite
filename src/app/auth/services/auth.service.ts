@@ -18,7 +18,8 @@ export class AuthService {
   register(request: RegisterRequest): Observable<any> {
     return this.http.post(
       `${this.apiUrl}/register`,
-      request
+      request,
+      { responseType: 'text' }
     );
   }
 
@@ -26,7 +27,7 @@ export class AuthService {
     return this.http.post<AuthResponse>(
       `${this.apiUrl}/login`,
       request
-    );
+      );
   }
 
   logout(): void {

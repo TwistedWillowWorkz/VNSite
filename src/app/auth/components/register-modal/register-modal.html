@@ -1,8 +1,10 @@
 <div class="auth-card">
 
-  <h2>Join the Nook</h2>
 
   @if (!registrationSuccessful) {
+
+    <h2>Join the Nook</h2>
+
     <form
       class="auth-form"
       (ngSubmit)="register()">
@@ -36,25 +38,25 @@
       }
 
     </form>
-  }
 
-  @if (registrationSuccessful) {
-    <div class="auth-success">
+  } @else {
 
-      <h3>Welcome to Vellichor Nook!</h3>
+    <div class="auth-success-card">
+
+      <h2>Registration Successful</h2>
 
       <p>
-        Your account has been created successfully.
+        You have registered successfully. Please log in.
       </p>
 
       <button
         type="button"
-        class="secondary-auth-button"
         (click)="goToLogin()">
         Log In
       </button>
 
     </div>
+
   }
 
 </div>
